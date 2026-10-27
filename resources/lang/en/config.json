@@ -3,7 +3,7 @@
     "pronouns": {
         "sets": {
             "-&-sets comment-&-": "These are used to determine what pronouns a cat is assigned when they are generated (or this language is swapped to for the first time). This allows languages with pronoun sets that don't match English 1:1 to display correctly.",
-            "nonbinary": "0",
+            "nonbinary": ["0", "3"],
             "male": "1",
             "trans male": "1",
             "female": "2",
@@ -21,6 +21,7 @@
             "order": {
                 "1": "plural male",
                 "2": "plural female",
+                "3": "plural nonbinary",
                 "0": "plural nonbinary"
             }
         },

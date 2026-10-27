@@ -40,6 +40,42 @@ class Pelt:
     # PELT LENGTH
     pelt_length = ["short", "medium", "long"]
 
+    # BODY TYPE
+    body_types: list = ["stocky", "lean", "muscular", "slender", "heavyset"]
+
+    # SIZE
+    sizes: list = ["large", "tall", "average-sized", "small", "short"]
+
+    # SCENT (alphabetized only by first letter because I'm lazy)
+    scents: list = [
+        "apple", "apricot", "alder",
+        "basil", "blueberry", "borage",
+        "cherry", "clove", "cedar",
+        "dates", "daisy", "dried leaves",
+        "embers", "elder leaves", "eucalyptus",
+        "fern", "flames", "fig",
+        "grass", "garlic", "goat",
+        "honey", "hydrangea", "horsetail",
+        "iris", "ink", "ivy",
+        "juniper", "jasmine", "jacaranda",
+        "katsura", "knotweed", "kudzu",
+        "lily", "lavender", "lemon",
+        "mint", "moss", "maple",
+        "nutmeg",
+        "olive", "orchid", "oak leaves",
+        "plum", "pear", "pumpkin",
+        "quince",
+        "rain", "rosemary", "raspberry",
+        "sage", "spruce", "smoke",
+        "thyme", "tansy", "tomato",
+        "ursinia",
+        "vanilla", "violet", "velvet",
+        "wool", "willow", "walnut",
+        "xanthium",
+        "yarrow",
+        "zinnia"
+    ]
+
     # PELT COLOURS
     all_pelt_colours: list = []
     ginger_colours: list = []
@@ -231,6 +267,9 @@ class Pelt:
     def __init__(
         self,
         name: str = "SingleColour",
+        scent: str = None,
+        body: str = None,
+        size: str = None,
         length: str = "short",
         colour: str = "WHITE",
         white_patches: str = None,
@@ -258,6 +297,9 @@ class Pelt:
         reverse: bool = False,
     ) -> None:
         self.name = name
+        self.scent = scent
+        self.body = body
+        self.size = size
         self.colour = colour
         self.white_patches = white_patches
         self.eye_colour = eye_color
@@ -460,6 +502,9 @@ class Pelt:
     @staticmethod
     def generate_new_pelt(gender: str, parents: tuple = (), age: str = "adult"):
         new_pelt = Pelt()
+        new_pelt.scent = choice(Pelt.scents)
+        new_pelt.body = choice(Pelt.body_types)
+        new_pelt.size = choice(Pelt.sizes)
 
         pelt_white = new_pelt.init_pattern_color(parents, gender)
         new_pelt.init_white_patches(pelt_white, parents)
@@ -540,6 +585,15 @@ class Pelt:
             self.tortie_marking = "MINIMALTHREE"
         elif self.tortie_marking == "MINIMAL4":
             self.tortie_marking = "MINIMALFOUR"
+
+        if self.scent is None:
+            self.scent = choice(Pelt.scents)
+
+        if self.body is None:
+            self.body = choice(Pelt.body_types)
+
+        if self.size is None:
+            self.size = choice(Pelt.sizes)
 
         if self.accessory is None:
             self.accessory = tuple()
