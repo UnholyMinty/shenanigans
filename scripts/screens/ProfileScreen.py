@@ -791,6 +791,22 @@ class ProfileScreen(Screens):
         # NEWLINE ----------
         output += "\n"
 
+        # BODY AND SIZE
+        output += i18n.t(
+            "screens.profile.size_label",
+            size=the_cat.pelt.size
+        )
+
+        output += " and "
+
+        output += i18n.t(
+            "screens.profile.body_label",
+            body=the_cat.pelt.body
+        )
+
+        # NEWLINE ----------
+        output += "\n"
+
         # PELT TYPE
         output += i18n.t(
             "screens.profile.pelt_label",
@@ -997,8 +1013,17 @@ class ProfileScreen(Screens):
         if bs_text:
             output += bs_text
 
-            # NEWLINE ----------
-            output += "\n"
+        # NEWLINE ----------
+        output += "\n"
+
+        # SCENT
+        output += i18n.t(
+            "screens.profile.scent_label",
+            scent=the_cat.pelt.scent
+        )
+
+        # NEWLINE ----------
+        output += "\n"
 
         # MENTOR
         # Only shows up if the cat has a mentor.

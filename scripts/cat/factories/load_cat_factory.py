@@ -271,6 +271,9 @@ class LoadCatFactory(BaseCatFactory):
                 "scars": kwargs["scars"],
                 "accessory": kwargs.get("accessory", []),
                 "opacity": kwargs.get("opacity", 100),
+                "scent": kwargs.get("pelt_scent"),
+                "body": kwargs.get("pelt_body"),
+                "size": kwargs.get("pelt_size")
             }
         )
         pelt.check_and_convert(convert_dict=cls.CONVERT)
