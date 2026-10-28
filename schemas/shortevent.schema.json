@@ -175,6 +175,14 @@
         "-stolenkit3",
         "stolenkit4",
         "-stolenkit4",
+        "no_memory1",
+        "-no_memory1",
+        "no_memory2",
+        "-no_memory2",
+        "no_memory3",
+        "-no_memory3",
+        "no_memory4",
+        "-no_memory4",
         "healer_backstories",
         "-healer_backstories",
         "baby_clancat_backstories",
@@ -2082,6 +2090,7 @@
         "sincere",
         "flamboyant",
         "rebellious",
+        "cheerful",
         "-troublesome",
         "-lonesome",
         "-fierce",
@@ -2119,7 +2128,8 @@
         "-gloomy",
         "-sincere",
         "-flamboyant",
-        "-rebellious"
+        "-rebellious",
+        "-cheerful"
       ],
       "title": "Trait",
       "type": "string"

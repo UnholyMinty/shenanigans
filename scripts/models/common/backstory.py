@@ -148,7 +148,7 @@ class Backstory(Enum):
     not_no_memory1 = "-no_memory1"
     no_memory2 = "no_memory2"
     not_no_memory2 = "-no_memory2"
-    no_memory3 = "no_memor3"
+    no_memory3 = "no_memory3"
     not_no_memory3 = "-no_memory3"
     no_memory4 = "no_memory4"
     not_no_memory4 = "-no_memory4"
