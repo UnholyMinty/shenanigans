@@ -382,6 +382,8 @@ You can utilize [#exclusionary tags](#exclusionary-tags). They function the same
 
     > | **SKILL,**       | **0**                            | **1**                     | **2**                    | **3**                          |
     |------------------|:----------------------------------:|:---------------------------:|:--------------------------:|:--------------------------------:|
+    | **ACTOR**       | `mimics others`, `studies body language`               | `good actor`             | `impressive actor`      |
+    `uncanny actor`               | 
     | **TEACHER**     | `good at sharing`, `quick to help`                     | `good teacher`           | `great teacher`         | `excellent teacher`           |
     | **HUNTER**      | `moss-ball hunter`, `fledgeling hunter`                | `good hunter`            | `great hunter`          | `renowned hunter`             |
     | **FIGHTER**     | `avid play-fighter`, `adept tussler`                   | `strong fighter`         | `formidable fighter`    | `indomitable fighter`         |

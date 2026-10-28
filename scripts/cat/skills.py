@@ -20,6 +20,7 @@ def scale_progress(current: float, ceiling: int, amount: float) -> float:
 
 
 class SkillPath(Enum):
+    ACTOR = ("ACTOR,0", "ACTOR,1", "ACTOR,2", "ACTOR,3")
     TEACHER = ("TEACHER,0", "TEACHER,1", "TEACHER,2", "TEACHER,3")
     HUNTER = ("HUNTER,0", "HUNTER,1", "HUNTER,2", "HUNTER,3")
     FIGHTER = ("FIGHTER,0", "FIGHTER,1", "FIGHTER,2", "FIGHTER,3")
@@ -97,6 +98,7 @@ class Skill:
     point_range = (0, 29)
 
     short_strings = {
+        SkillPath.ACTOR: "acting",
         SkillPath.TEACHER: "teaching",
         SkillPath.HUNTER: "hunting",
         SkillPath.FIGHTER: "fighting",
@@ -246,6 +248,7 @@ class CatSkills:
     # Mentor Inflence groups.
     # pylint: disable=unsupported-binary-operation
     influence_flags = {
+        SkillPath.ACTOR: SkillTypeFlag.SMART | SkillTypeFlag.SOCIAL | SkillTypeFlag.OBSERVANT,
         SkillPath.TEACHER: SkillTypeFlag.STRONG
         | SkillTypeFlag.AGILE
         | SkillTypeFlag.SMART

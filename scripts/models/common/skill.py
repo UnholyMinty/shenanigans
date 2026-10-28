@@ -5,6 +5,7 @@ from pydantic import AfterValidator, StringConstraints, RootModel
 
 
 class Skills(Enum):
+    ACTOR = "ACTOR"
     TEACHER = "TEACHER"
     HUNTER = "HUNTER"
     FIGHTER = "FIGHTER"

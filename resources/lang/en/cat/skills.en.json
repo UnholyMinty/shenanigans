@@ -8,6 +8,13 @@
         "adept": "adept",
         "masterful": "masterful",
 
+        "acting": "acting",
+        "ACTOR,0": "mimics others",
+        "ACTOR,0.5": "studies body language",
+        "ACTOR,1": "good actor",
+        "ACTOR,2": "impressive actor",
+        "ACTOR,3": "uncanny actor",
+
         "teaching": "teaching",
         "TEACHER,0": "good at sharing",
         "TEACHER,0.5": "quick to help",

@@ -10,6 +10,12 @@ For this documentation, each skill is listed under its internal name.
 
 ## **Skills**
 
+### **ACTOR**
+
+Cats with the ```ACTOR``` skill are good at acting, copying others, and perhaps noticing when others lie.
+
+_Canon Examples: TBA_
+
 ### **TEACHER**
 
 Cats with the ```TEACHER``` skill are skilled teachers who can readily pass on knowledge to both their peers and apprentices. Cats with the ```TEACHER``` skill can teach cats with any skill at an increased rate (except for supernatural skills, which cannot be trained). This skill is particularly applicable in patrols and events where cats are learning information from another cat or are being formally trained.
