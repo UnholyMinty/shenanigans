@@ -825,7 +825,15 @@ class ProfileScreen(Screens):
             "screens.profile.fur_label",
             length=i18n.t(f"cat.pelts.fur_{the_cat.pelt.length}"),
         )
+
         # NEWLINE ----------
+        output += "\n"
+
+        # EXTRA
+        output += i18n.t(
+            "screens.profile.extra_label",
+            extra=the_cat.pelt.extra
+        )
 
         # ACCESSORY
         if the_cat.pelt.accessory:

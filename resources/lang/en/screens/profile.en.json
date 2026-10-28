@@ -37,6 +37,7 @@
         "pelt_label": "pelt: %{pelt}",
         "texture_label": "%{texture}",
         "fur_label": ", %{length} fur",
+        "extra_label": "%{extra}",
         "scent_label": "scent: %{scent}",
         "body_label": "%{body}",
         "size_label": "%{size}",

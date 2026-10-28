@@ -49,6 +49,9 @@ class Pelt:
     # SIZE
     sizes: list = ["large", "tall", "average-sized", "small", "short"]
 
+    # EXTRA
+    extra_info: list = ["emo bangs", "protruding fangs", "one whisker", "loud breather", "ear tufts", "eyelashes", "big ears", "small ears", "one floppy ear", "floppy ears", "mane", "wing-like fur", "legwarmers", "mustache", "shoulder fur", "messy fur", "loud voice", "quiet voice", "eyebags", "hug shaped"]
+
     # SCENT (alphabetized only by first letter because I'm lazy)
     scents: list = [
         "apple", "apricot", "alder",
@@ -274,6 +277,7 @@ class Pelt:
         body: str = None,
         size: str = None,
         texture: str = None,
+        extra: str = None,
         length: str = "short",
         colour: str = "WHITE",
         white_patches: str = None,
@@ -315,6 +319,7 @@ class Pelt:
         self.vitiligo = vitiligo
         self.length = length
         self.texture = texture
+        self.extra = extra
         self.points = points
         self.rebuild_sprite = True
         self._accessory = accessory
@@ -511,6 +516,7 @@ class Pelt:
         new_pelt.body = choice(Pelt.body_types)
         new_pelt.size = choice(Pelt.sizes)
         new_pelt.texture = choice(Pelt.fur_textures)
+        new_pelt.extra = choice(Pelt.extra_info)
 
         pelt_white = new_pelt.init_pattern_color(parents, gender)
         new_pelt.init_white_patches(pelt_white, parents)
@@ -603,6 +609,9 @@ class Pelt:
 
         if self.texture is None:
             self.texture = choice(Pelt.fur_textures)
+
+        if self.extra is None:
+            self.extra = choice(Pelt.extra_info)
 
         if self.accessory is None:
             self.accessory = tuple()

@@ -2316,7 +2316,8 @@ class Cat:
                 "pelt_scent": self.pelt.scent,
                 "pelt_body": self.pelt.body,
                 "pelt_size": self.pelt.size,
-                "pelt_texture": self.pelt.texture
+                "pelt_texture": self.pelt.texture,
+                "pelt_extra": self.pelt.extra,
             }
 
     def determine_next_and_previous_cats(
