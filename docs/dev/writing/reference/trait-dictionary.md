@@ -155,6 +155,20 @@ Pop-Culture Examples: Cloudstar (Warrior Cats), Zazu (Lion King); C-3PO (Star Wa
 
 ---
 
+### **Cheerful**
+
+***\[0,12\] lawfulness | \[12,16\] sociability | \[0,4\] aggression | \[4,12\] stability***
+
+* "I stay optimistic, even if things seem to be going bad."
+* "Others might seek me out for my perspective, but I can also be a lot."
+* "I can refuse to see the bad side of things."
+* "It's hard to disappoint me."
+* "I might share some traits with **[playful](#playful), [oblivious](#oblivious), and [flamboyant](#flamboyant)** cats."
+
+**Pop-Culture Examples:** TBA
+
+---
+
 ### **Childish**
 
 ***\[0,8\] lawfulness | \[8,16\] sociability | \[0,8\] aggression | \[0,8\] stability*** 

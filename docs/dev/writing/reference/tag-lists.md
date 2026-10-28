@@ -452,6 +452,7 @@ You can utilize [#exclusionary tags](#exclusionary-tags). They function the same
     * `sincere`
     * `flamboyant`
     * `rebellious`
+    * `cheerful`
 
 
 

@@ -40,6 +40,7 @@ class Trait(Enum):
     sincere = "sincere"
     flamboyant = "flamboyant"
     rebellious = "rebellious"
+    cheerful = "cheerful"
     not_troublesome = "-troublesome"
     not_lonesome = "-lonesome"
     not_fierce = "-fierce"
@@ -78,3 +79,4 @@ class Trait(Enum):
     not_sincere = "-sincere"
     not_flamboyant = "-flamboyant"
     not_rebellious = "-rebellious"
+    not_cheerful = "-cheerful"

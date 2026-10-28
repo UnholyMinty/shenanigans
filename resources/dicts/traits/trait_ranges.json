@@ -227,6 +227,12 @@
             "sociability": [0, 16],
             "aggression": [6, 10],
             "stability": [10, 16]
+        },
+        "cheerful": {
+            "lawfulness": [0, 12],
+            "sociability": [12, 16],
+            "aggression": [0, 4],
+            "stability": [4, 12]
         }
     },
     "kit_traits": {
