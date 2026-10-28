@@ -815,7 +815,12 @@ class ProfileScreen(Screens):
         # NEWLINE ----------
         output += "\n"
 
-        # PELT LENGTH
+        # PELT TEXTURE AND LENGTH
+        output += i18n.t(
+                    "screens.profile.texture_label",
+                    texture=the_cat.pelt.texture
+                )
+        
         output += i18n.t(
             "screens.profile.fur_label",
             length=i18n.t(f"cat.pelts.fur_{the_cat.pelt.length}"),

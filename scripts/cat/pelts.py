@@ -40,6 +40,9 @@ class Pelt:
     # PELT LENGTH
     pelt_length = ["short", "medium", "long"]
 
+    # PELT TEXTURE
+    fur_textures: list = ["curly", "silky", "spiky", "wavy", "thick", "soft", "rough", "sparse", "smooth", "wiry", "shiny"]
+
     # BODY TYPE
     body_types: list = ["stocky", "lean", "muscular", "slender", "heavyset"]
 
@@ -270,6 +273,7 @@ class Pelt:
         scent: str = None,
         body: str = None,
         size: str = None,
+        texture: str = None,
         length: str = "short",
         colour: str = "WHITE",
         white_patches: str = None,
@@ -310,6 +314,7 @@ class Pelt:
         self.tortie_colour = tortie_colour
         self.vitiligo = vitiligo
         self.length = length
+        self.texture = texture
         self.points = points
         self.rebuild_sprite = True
         self._accessory = accessory
@@ -505,6 +510,7 @@ class Pelt:
         new_pelt.scent = choice(Pelt.scents)
         new_pelt.body = choice(Pelt.body_types)
         new_pelt.size = choice(Pelt.sizes)
+        new_pelt.texture = choice(Pelt.fur_textures)
 
         pelt_white = new_pelt.init_pattern_color(parents, gender)
         new_pelt.init_white_patches(pelt_white, parents)
@@ -594,6 +600,9 @@ class Pelt:
 
         if self.size is None:
             self.size = choice(Pelt.sizes)
+
+        if self.texture is None:
+            self.texture = choice(Pelt.fur_textures)
 
         if self.accessory is None:
             self.accessory = tuple()
