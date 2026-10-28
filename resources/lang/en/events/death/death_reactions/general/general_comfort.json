@@ -79,6 +79,14 @@
             "When r_c's shaking voice speaks of m_c, {PRONOUN/r_c/poss} words are so warm and genuine that all of c_n is moved by {PRONOUN/r_c/poss} devotion."
         ]
     },
+    "cheerful": {
+        "body": [
+            "Even r_c can't cheer {PRONOUN/m_c/poss} way out of this, seeing m_c's body like this."
+        ],
+        "no_body": [
+            "Even r_c can't cheer {PRONOUN/m_c/poss} way out of this, without even a body to grieve."
+        ]
+    },
     "childish": {
         "body": [
             "At the news of m_c's death, r_c wails and bolts out of camp, trying to outrun reality... only to realize later that {PRONOUN/r_c/subject} missed most of the vigil. Devastated, r_c grieves in {PRONOUN/r_c/poss} own way, hidden from judgmental eyes."

@@ -1013,17 +1013,8 @@ class ProfileScreen(Screens):
         if bs_text:
             output += bs_text
 
-        # NEWLINE ----------
-        output += "\n"
-
-        # SCENT
-        output += i18n.t(
-            "screens.profile.scent_label",
-            scent=the_cat.pelt.scent
-        )
-
-        # NEWLINE ----------
-        output += "\n"
+            # NEWLINE ----------
+            output += "\n"
 
         # MENTOR
         # Only shows up if the cat has a mentor.
@@ -1068,6 +1059,7 @@ class ProfileScreen(Screens):
 
         # CHARACTER TRAIT
         output += i18n.t(f"cat.personality.{the_cat.personality.trait}")
+
         # NEWLINE ----------
         output += "\n"
 
@@ -1075,6 +1067,15 @@ class ProfileScreen(Screens):
         output += the_cat.skills.skill_string(
             is_adolescent=(the_cat.age == CatAge.ADOLESCENT)
         )
+        # NEWLINE ----------
+        output += "\n"
+
+        # SCENT
+        output += i18n.t(
+            "screens.profile.scent_label",
+            scent=the_cat.pelt.scent
+        )
+
         # NEWLINE ----------
         output += "\n"
 
