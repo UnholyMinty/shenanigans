@@ -235,6 +235,7 @@ class History:
 
         # working under the impression that these blurbs will be preceded by "become better at"
         skill_influence_text = {
+            SkillPath.ACTOR: ["acting"],
             SkillPath.TEACHER: ["teaching"],
             SkillPath.HUNTER: ["hunting"],
             SkillPath.FIGHTER: ["fighting"],

@@ -23,13 +23,14 @@
             "refugee2",
             "tragedy_survivor4",
             "guided3",
-            "stolenkit4"
+            "stolenkit4",
+            "no_memory2"
         ],
         "rogue_backstories": [
-            "rogue1", "rogue2", "rogue3", "refugee4", "tragedy_survivor2", "guided2"
+            "rogue1", "rogue2", "rogue3", "refugee4", "tragedy_survivor2", "guided2", "no_memory1"
         ],
         "kittypet_backstories": [
-            "kittypet1", "kittypet2", "kittypet3", "kittypet4", "refugee3", "tragedy_survivor3", "guided1", "refugee6"
+            "kittypet1", "kittypet2", "kittypet3", "kittypet4", "refugee3", "tragedy_survivor3", "guided1", "refugee6", "no_memory4"
         ],
         "former_clancat_backstories": [
             "otherclan1",
@@ -48,7 +49,8 @@
             "refugee5",
             "stolenkit1",
             "stolenkit2",
-            "stolenkit3"
+            "stolenkit3",
+            "no_memory3"
         ],
         "healer_backstories": [
             "medicine_cat", "wandering_healer1", "wandering_healer2"
